@@ -7,7 +7,7 @@ if [ ! -d "$OMZDIR" ]; then
   /bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 else
   echo 'Updating oh-my-zsh'
-  upgrade_oh_my_zsh
+  omz update
 fi
 
 # Change default shell

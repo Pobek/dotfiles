@@ -1,7 +1,7 @@
 - shell:
   - command: [apt update && apt install -y zsh]
     description: Install Zsh
-  - command: [sh ./meta/scripts/configure-shell.sh]
+  - command: [sh zsh/configure-shell.sh]
     description: Configure zsh as main shell
 
 - link:
