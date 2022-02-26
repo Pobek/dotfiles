@@ -1,0 +1,6 @@
+- shell:
+  - command: [apt update && apt install -y zsh]
+    description: Install Zsh
+
+- link:
+    ~/.zshrc: zsh/zshrc

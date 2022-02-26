@@ -1,0 +1,12 @@
+set number
+set relativenumber
+noremap : ;
+noremap ; :
+syntax on
+set ts=2
+set shiftwidth=2
+set bs=2
+set et
+set expandtab
+set noshowmode
+set shell=bash\ -i
