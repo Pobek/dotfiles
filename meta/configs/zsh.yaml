@@ -6,3 +6,4 @@
 
 - link:
     ~/.zshrc: zsh/zshrc
+    ~/.oh-my-zsh/themes/robbyrussell.zsh-theme: zsh/themes/robbyrussel-customized.zsh-theme
