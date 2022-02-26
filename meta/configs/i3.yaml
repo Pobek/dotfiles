@@ -1,0 +1,8 @@
+- shell:
+    - command: [add-apt-repository ppa:regolith-linux/release]
+    - command: [apt-get update]
+    - command: [apt-get install -y i3-gaps]
+
+- link:
+    ~/.config/i3/config: i3/config 
+    ~/.config/i3status/config: i3status/config
