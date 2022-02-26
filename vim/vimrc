@@ -10,3 +10,24 @@ set et
 set expandtab
 set noshowmode
 set shell=bash\ -i
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'itchyny/lightline.vim'
+Plug 'https://github.com/joshdick/onedark.vim'
+Plug 'vim-airline/vim-airline'
+"Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'airblade/vim-gitgutter'
+Plug 'metakirby5/codi.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+"Plug 'davidhalter/jedi-vim'
+
+call plug#end()
+
+colo onedark
+
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
+let g:airline_theme='onedark'
+filetype plugin on
