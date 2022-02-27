@@ -1,7 +1,10 @@
 - shell:
     - command: [add-apt-repository ppa:regolith-linux/release]
     - command: [apt-get update]
-    - command: [apt-get install -y i3-gaps rofi compton compton-conf nitrogen feh xsettingsd lxappearance neofetch w3m-img imagemagick]
+    - command: [apt-get install -y i3-gaps rofi compton compton-conf nitrogen feh xsettingsd lxappearance neofetch w3m-img imagemagick playerctl]
+    - command: [apt-get install -y libcurl4-openssl-dev cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev]
+    - command: [apt-get install -y libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen]
+    - command: [apt-get install -y xcb-proto libxcb-xrm-dev libasound2-dev libmpdclient-dev libiw-dev libpulse-dev libxcb-composite0-dev xcb libxcb-ewmh2 libjsoncpp-dev]
 
 - link:
     ~/.config/i3/config: gui/i3/config 
@@ -13,6 +16,7 @@
     ~/.config/compton.conf: gui/compton/config
     ~/.config/wall.png: gui/Space.png
     ~/.dmenurc: gui/other/dmenurc
+    ~/.config/polybar/music.sh: gui/polybar/music.sh
 
 - create:
     - ~/.themes/
