@@ -9,10 +9,11 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
 # Setup no title for i3wm-gaps
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 2
 
 # Setup gaps
 gaps inner 10
@@ -20,6 +21,13 @@ gaps inner 10
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 8
+
+# Configure border style <normal|1pixel|pixel xx|none|pixel>
+new_window pixel 2
+new_float pixel 2
+
+# Hide borders
+hide_edge_borders none
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -154,6 +162,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+# Open specific applications in floating mode
+# for_window [class="Firefox"] floating enable border none
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -180,6 +191,32 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Autostart apps
+exec xrdb -merge ~/.Xresources
+exec_always feh --bg-scale ~/.config/wall.png
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id "compton -b"
+
+# Colors set from ~/.Xresources
+set_from_resource	$background	background
+set_from_resource	$foreground	foreground
+set_from_resource	$color0		color0
+set_from_resource 	$color1 	color1
+set_from_resource 	$color2 	color2
+set_from_resource 	$color3 	color3
+set_from_resource 	$color4 	color4
+set_from_resource 	$color5 	color5
+set_from_resource 	$color6		color6
+set_from_resource	$color7		color7
+set_from_resource	$color8		color8
+set_from_resource	$color9		color9
+set_from_resource	$color10	color10
+set_from_resource	$color11	color11
+set_from_resource	$color12	color12
+set_from_resource	$color13	color13
+set_from_resource	$color14	color14
+set_from_resource	$color15	color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
