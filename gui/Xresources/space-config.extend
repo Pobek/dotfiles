@@ -7,43 +7,45 @@
 *pointerColorForeground:#16A085
 
 URxvt.internalBorder: 6
-
 ! special
-*.foreground:   #c5c8c6
-*.background:   #1e1e20
-*.cursorColor:  #c5c8c6
+*.foreground:   #c6c6c6
+*.background:   #1f1f1f
+*.cursorColor:  #c6c6c6
 
 ! black
-*.color0:       #1e1e20
-*.color8:       #a1abad
+*.color0:       #828282
+*.color8:       #828282
 
 ! red
-*.color1:       #80969b
-*.color9:       #80969b
+*.color1:       #cc6666
+*.color9:       #cc6666
 
 ! green
-*.color2:       #56737a
-*.color10:      #56737a
+*.color2:       #81a2be
+*.color10:      #81a2be
 
 ! yellow
-*.color3:       #416269
-*.color11:      #416269
+*.color3:       #f0c674
+*.color11:      #f0c674
 
 ! blue
-*.color4:       #2c5159
-*.color12:      #2c5159
+*.color4:       #81a2be
+*.color12:      #81a2be
 
 ! magenta
-*.color5:       #274850
-*.color13:      #274850
+*.color5:       #b294bb
+*.color13:      #b294bb
 
 ! cyan
-*.color6:       #1e383e
-*.color14:      #1e383e
+*.color6:       #8abeb7
+*.color14:      #8abeb7
 
 ! white
-*.color7:       #a1abad
-*.color15:      #a1abad
+*.color7:       #c5c8c6
+*.color15:      #c5c8c6
+
+
+
 
 
 Xcursor.theme: Breeze
@@ -61,24 +63,24 @@ XTerm*selectToClipboard: true
 URxvt.font: xft:monofur:size=12
 URxvt.geometry: 80x20
 URxvt.depth: 32
-URxvt.background:	[100]#1e1e20
+URxvt.background:	[100]#1f1f1f
 URxvt*scrollBar:                      false
 URxvt*mouseWheelScrollPage:           false
 URxvt*cursorBlink:                    true
-!URxvt*.background:   		      #1e1e20
-URxvt*.foreground: 		      #c5c8c6
-URxvt*cursorColor:		      #c5c8c6
+!URxvt*.background:   		      #1f1f1f
+URxvt*.foreground: 		      #c6c6c6
+URxvt*cursorColor:		      #c6c6c6
 URxvt*saveLines:                      5000
 ! ROFI SETUP HERE !
 
 ! Enable the extended coloring options
 rofi.color-enabled: true
 !                  bg       border   separator
-rofi.color-window: #1e1e20, #274850, #274850
+rofi.color-window: #1f1f1f, #c6c6c6, #c6c6c6
 !                  bg       fg       bg-alt   hl-bg    hl-fg
-rofi.color-normal: #1e1e20, #c5c8c6, #1e1e20, #1e1e20, #274850
-rofi.color-active: #1e1e20, #c5c8c6, #1e1e20, #1e1e20, #274850
-rofi.color-urgent: #1e1e20, #c5c8c6, #1e1e20, #1e1e20, #274850
+rofi.color-normal: #1f1f1f, #828282, #1f1f1f, #1f1f1f, #c6c6c6
+rofi.color-active: #1f1f1f, #828282, #1f1f1f, #1f1f1f, #c6c6c6
+rofi.color-urgent: #1f1f1f, #828282, #1f1f1f, #1f1f1f, #c6c6c6
 
 rofi.separator-style: solid
 rofi.sidebar-mode: false
@@ -226,4 +228,3 @@ rofi.hide-scrollbar: true
 ! URxvt*tabbar-bg:                      colour
 ! URxvt*tabbar-fg:                      colour
 ! URxvt*url-launcher:                   string
-
