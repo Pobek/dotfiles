@@ -2,6 +2,7 @@
     - command: [add-apt-repository ppa:regolith-linux/release]
     - command: [apt-get update]
     - command: [apt-get install -y i3-gaps rofi]
+    - command: [snap install polybar-git --edge --devmode]
 
 - link:
     ~/.config/i3/config: gui/i3/config 
