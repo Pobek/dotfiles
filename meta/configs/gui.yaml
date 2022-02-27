@@ -12,6 +12,12 @@
     ~/.config/polybar/launch.sh: gui/polybar/launch.sh
     ~/.config/compton.conf: gui/compton/config
     ~/.config/wall.png: gui/Space.png
+    ~/.dmenurc: gui/other/dmenurc
+
+- create:
+    - ~/.themes/
+    - ~/.fonts/
 
 - shell:
     - command: [cp -R gui/fonts/. ~/.fonts/]
+    - command: [cp -R gui/themes/. ~/.themes/]
