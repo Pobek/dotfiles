@@ -1,7 +1,7 @@
 - shell:
     - command: [add-apt-repository ppa:regolith-linux/release]
     - command: [apt-get update]
-    - command: [apt-get install -y i3-gaps rofi compton compton-conf nitrogen feh]
+    - command: [apt-get install -y i3-gaps rofi compton compton-conf nitrogen feh xsettingsd lxappearance neofetch w3m-img imagemagick]
 
 - link:
     ~/.config/i3/config: gui/i3/config 
@@ -17,7 +17,9 @@
 - create:
     - ~/.themes/
     - ~/.fonts/
+    - ~/.icons/
 
 - shell:
     - command: [cp -R gui/fonts/. ~/.fonts/]
     - command: [cp -R gui/themes/. ~/.themes/]
+    - command: [cp -R gui/icons/. ~/.icons/]
