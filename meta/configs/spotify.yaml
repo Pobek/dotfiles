@@ -5,3 +5,9 @@
     - command: [echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list]
     - command: [apt-get update]
     - command: [apt-get install -y spotify-client]
+
+- create:
+    - ~/.config/spotify/Users/jjj0a8tfzbaxiae1kxxe5m7ou-user/
+
+- link:
+    ~/.config/spotify/Users/jjj0a8tfzbaxiae1kxxe5m7ou-user/prefs: spotify/prefs
