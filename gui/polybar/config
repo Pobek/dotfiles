@@ -126,7 +126,7 @@ label-focused-padding = 2
 label-unfocused = %index%
 label-unfocused-padding = 2
 
-label-visible = %index%
+label-visible = %name%
 label-visible-underline = ${colors.my_foreground}
 label-visible-padding = 4
 
