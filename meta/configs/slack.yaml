@@ -1,0 +1,6 @@
+- shell:
+    - command: [apt-get update]
+    - command: [apt-get install -y curl]
+    - command: [curl -sSL https://github.com/erroneousboat/slack-term/releases/download/v0.5.0/slack-term-linux-amd64 -o /tmp/slack-term]
+    - command: [chmod +x /tmp/slack-term]
+    - command: [mv /tmp/slack-term /usr/local/bin/slack-term]
