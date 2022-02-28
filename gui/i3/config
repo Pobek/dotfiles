@@ -216,7 +216,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id "compton -b"
 exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
 exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/active false
-exec xautolock -time 15 -locker "~/.config/i3/lock.sh" -corners +00-
+exec_always xautolock -time 15 -locker "~/.config/i3/lock.sh" -corners +00-
 
 # Colors set from ~/.Xresources
 set_from_resource	$background	background
