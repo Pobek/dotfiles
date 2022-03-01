@@ -6,6 +6,12 @@
     - command: [apt-get install -y libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen]
     - command: [apt-get install -y xcb-proto libxcb-xrm-dev libasound2-dev libmpdclient-dev libiw-dev libpulse-dev libxcb-composite0-dev xcb libxcb-ewmh2 libjsoncpp-dev]
 
+- create:
+    - ~/.themes/
+    - ~/.fonts/
+    - ~/.icons/
+    - ~/.config/compton/
+
 - link:
     ~/.config/i3/config: gui/i3/config 
     ~/.config/i3status/config: gui/i3status/config
@@ -13,17 +19,13 @@
     ~/.extend.Xresources: gui/Xresources/config.extend
     ~/.config/polybar/config: gui/polybar/config
     ~/.config/polybar/launch.sh: gui/polybar/launch.sh
-    ~/.config/compton.conf: gui/compton/config
+    ~/.config/compton/compton.conf: gui/compton/config
     ~/.config/wall.png: gui/inosuke-demon-slayer.jpg
     ~/.dmenurc: gui/other/dmenurc
     ~/.config/polybar/music.sh: gui/polybar/music.sh
     ~/.config/i3/lock.sh: gui/i3/lock.sh
     ~/.config/lock.png: gui/i3/lock.png
-
-- create:
-    - ~/.themes/
-    - ~/.fonts/
-    - ~/.icons/
+    ~/.config/compton/launch.sh: gui/compton/launch.sh
 
 - shell:
     - command: [cp -R gui/fonts/. ~/.fonts/]

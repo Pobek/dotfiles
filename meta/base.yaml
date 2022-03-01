@@ -13,6 +13,7 @@
 - clean:
     ~/:
         force: true
-    ~/.config:
+    ~/.config/:
+        force: true
         recursive: true
 

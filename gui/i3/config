@@ -216,7 +216,7 @@ bindsym $mod+r mode "resize"
 exec xrdb -merge ~/.Xresources
 exec_always feh --bg-scale ~/.config/wall.png
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec compton
+exec_always --no-startup-id ~/.config/compton/launch.sh
 exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
 exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/active false
 exec_always xautolock -time 15 -locker "~/.config/i3/lock.sh" -corners +00-
