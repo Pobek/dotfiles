@@ -8,6 +8,8 @@ My dotfiles repository uses [dotbot](https://github.com/anishathalye/dotbot).
 
 ![pic2](https://github.com/pobek/dotfiles/blob/master/pics/pic2.png?raw=true)
 
+![pic3](https://github.com/pobek/dotfiles/blob/master/pics/pic3.png?raw=true)
+
 ## Installing
 
 There are two options to install this dotfiles repo:
