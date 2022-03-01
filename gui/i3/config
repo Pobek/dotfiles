@@ -16,6 +16,7 @@ set $mod Mod4
 for_window [class=".*"] border pixel 2
 
 # Setup gaps
+gaps outer 10
 gaps inner 10
 
 # Font for window titles. Will also be used by the bar unless a different font
