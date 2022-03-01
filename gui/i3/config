@@ -13,7 +13,7 @@
 set $mod Mod4
 
 # Setup no title for i3wm-gaps
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 0
 
 # Setup gaps
 gaps outer 10

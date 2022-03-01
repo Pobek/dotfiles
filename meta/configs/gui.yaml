@@ -14,7 +14,7 @@
     ~/.config/polybar/config: gui/polybar/config
     ~/.config/polybar/launch.sh: gui/polybar/launch.sh
     ~/.config/compton.conf: gui/compton/config
-    ~/.config/wall.png: gui/green-semi-circle.jpg
+    ~/.config/wall.png: gui/inosuke-demon-slayer.jpg
     ~/.dmenurc: gui/other/dmenurc
     ~/.config/polybar/music.sh: gui/polybar/music.sh
     ~/.config/i3/lock.sh: gui/i3/lock.sh
