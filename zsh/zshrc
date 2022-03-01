@@ -101,4 +101,4 @@ autoload -Uz compinit && compinit
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-neofetch
+neofetch --config off --colors 3 3 7 4 4 7
