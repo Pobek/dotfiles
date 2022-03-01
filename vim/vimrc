@@ -20,6 +20,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'metakirby5/codi.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'preservim/nerdtree'
 "Plug 'davidhalter/jedi-vim'
 
 call plug#end()
