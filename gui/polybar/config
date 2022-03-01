@@ -64,7 +64,7 @@ modules-left = i3 xwindow cpu memory
 modules-center = date 
 modules-right = musicinfo
 
-tray-position = right
+tray-position = none
 tray-padding = 9
 tray-transparent = false
 tray-offset-y = 0%
