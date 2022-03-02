@@ -1,6 +1,7 @@
 - shell:
     - command: [apt-get update]
     - command: [apt-get install -y curl]
-    - command: [curl -sSL https://github.com/erroneousboat/slack-term/releases/download/v0.5.0/slack-term-linux-amd64 -o /tmp/slack-term]
-    - command: [chmod +x /tmp/slack-term]
-    - command: [mv /tmp/slack-term /usr/local/bin/slack-term]
+    - command: [curl -sSl https://downloads.slack-edge.com/releases/linux/4.23.0/prod/x64/slack-desktop-4.23.0-amd64.deb -o ./slack-desktop-4.23.0-amd64.deb]
+    - command: [ls -la]
+    - command: [dpkg -i ./slack-desktop-4.23.0-amd64.deb]
+    - command: [rm ./slack-desktop-4.23.0-amd64.deb]
