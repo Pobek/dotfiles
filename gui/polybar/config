@@ -52,13 +52,13 @@ border-color = ${colors.my_color2}
 padding-left = 0
 padding-right = 0
 
-module-margin-left = 0
-module-margin-right = 0
+module-margin-left = 1
+module-margin-right = 1
 
-font-2 = FontAwesome:fontformat=truetype:size=13;1
+font-3 = Font Awesome 6 Brands:style=Regular:size=13
+font-2 = Font Awesome 6 Free Solid:style=Regular:size=13
+font-1 = Font Awesome 6 Free:style=Regular:size=13
 font-0 = monofur:fontformat=truetype:size=15;1
-font-1 = monofur:fontformat=truetype:size=15;1
-
 
 modules-left = i3 xwindow
 modules-center = date 
@@ -82,20 +82,9 @@ type = internal/cpu
 
 interval = 1
 
-format = <label> <ramp-coreload>
+format = <label>
 
-label = CPU %percentage%%
-
-; Spacing between individual per-core ramps
-ramp-coreload-spacing = 1
-ramp-coreload-0 = ▁
-ramp-coreload-1 = ▂
-ramp-coreload-2 = ▃
-ramp-coreload-3 = ▄
-ramp-coreload-4 = ▅
-ramp-coreload-5 = ▆
-ramp-coreload-6 = ▇
-ramp-coreload-7 = █
+label =  %percentage%%
 
 [module/memory]
 type = internal/memory
@@ -105,7 +94,7 @@ interval = 3
 format = <label>
 
 ;label = RAM %gb_used%/%gb_total%
-label = RAM %percentage_used%%
+label =  %percentage_used%%
 
 [module/i3]
 type = internal/i3
