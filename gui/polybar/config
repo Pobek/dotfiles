@@ -43,17 +43,17 @@ fixed-center = true
 background = ${colors.my_background}
 foreground =  ${colors.my_foreground}
 
-line-size = 3
+line-size = 5
 line-color = ${colors.my_color4}
 
 border-size = 1
 border-color = ${colors.my_color2}
 
 padding-left = 0
-padding-right = 0
+padding-right = 1
 
 module-margin-left = 1
-module-margin-right = 1
+module-margin-right = 0
 
 font-3 = Font Awesome 6 Brands:style=Regular:size=13
 font-2 = Font Awesome 6 Free Solid:style=Regular:size=13
@@ -62,7 +62,7 @@ font-0 = monofur:fontformat=truetype:size=15;1
 
 modules-left = i3 xwindow
 modules-center = date 
-modules-right = cpu memory musicinfo
+modules-right = cpu memory wired-network  musicinfo
 
 tray-position = none
 tray-padding = 9
@@ -99,6 +99,11 @@ label =  %percentage_used%%
 [module/i3]
 type = internal/i3
 
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+
 label-unfocused-background = ${colors.my_background}
 label-unfocused-foreground = ${colors.my_foreground}
 
@@ -106,20 +111,20 @@ label-mode = %mode%
 label-mode-padding = 2
 label-mode-background = ${colors.my_color4}
 
-label-focused = %index%
+label-focused = %icon% %name%
 label-focused-foreground = ${colors.my_foreground}
 label-focused-background = ${colors.my_background}
 label-focused-underline = ${colors.my_color4}
 label-focused-padding = 2
 
-label-unfocused = %index%
+label-unfocused = %icon% %name%
 label-unfocused-padding = 2
 
-label-visible = %name%
+label-visible = %icon% %name%
 label-visible-underline = ${colors.my_foreground}
 label-visible-padding = 4
 
-label-urgent = %index%
+label-urgent = %icon% %name%
 label-urgent-foreground = ${colors.my_foreground}
 label-urgent-background = ${colors.my_background}
 label-urgent-underline = ${colors.my_color8}
@@ -132,7 +137,7 @@ exec = ~/.config/polybar/music.sh
 interval = 1
 format = <label>
 label = %output:0:30:...%
-format-padding = 10
+format-padding = 0
 format-foreground = ${colors.my_color2}
 
 [module/date]
@@ -205,3 +210,18 @@ type = internal/xwindow
 label = %title:0:30:...%
 label-padding = 10
 label-foreground = ${colors.my_color4}
+
+[module/wired-network]
+type = internal/network
+interface = enp0s3
+
+interval = 5
+
+format-connected = <label-connected>
+format-packetloss = <label-connected>
+
+label-connected =  %downspeed%
+label-connected-foreground = #eefafafa
+
+label-disconnected = not connected
+label-disconnected-foreground = #66ffffff
