@@ -1,0 +1,6 @@
+- shell:
+    - command: [apt-get update]
+    - command: [apt-get install -y git]
+
+- link:
+    ~/.gitconfig: git/config
