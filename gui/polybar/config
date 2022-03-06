@@ -39,6 +39,9 @@ offset-y = 0
 radius = 0.0
 fixed-center = true
 
+separator = "|"
+separator-padding = 1
+separator-foreground = ${colors.my_color9}
 
 background = ${colors.my_background}
 foreground =  ${colors.my_foreground}
@@ -55,14 +58,14 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 0
 
-font-3 = Font Awesome 6 Brands:style=Regular:size=13
-font-2 = Font Awesome 6 Free Solid:style=Regular:size=13
-font-1 = Font Awesome 6 Free:style=Regular:size=13
-font-0 = monofur:fontformat=truetype:size=15;1
+font-3 = Font Awesome 6 Brands:style=Regular:size=11
+font-2 = Font Awesome 6 Free Solid:style=Regular:size=11
+font-1 = Font Awesome 6 Free:style=Regular:size=11
+font-0 = monofur:fontformat=truetype:size=13;1
 
 modules-left = i3 xwindow
-modules-center = date 
-modules-right = cpu memory wired-network  musicinfo
+modules-center = date xkeyboard
+modules-right = cpu memory wired-network filesystem musicinfo
 
 tray-position = none
 tray-padding = 9
@@ -225,3 +228,33 @@ label-connected-foreground = #eefafafa
 
 label-disconnected = not connected
 label-disconnected-foreground = #66ffffff
+
+[module/filesystem]
+separator = "|"
+type = internal/fs
+
+mount-0 = /
+
+interval = 30
+
+fixed-values = true
+
+spacing = 2
+
+format-mounted =  <label-mounted>
+
+label-mounted = %mountpoint%: %free%%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+format = <label-layout> <label-indicator>
+format-spacing = 0
+
+label-layout = %icon% %name%
+label-layout-padding = 0
+label-layout-background = ${colors.my_background}
+label-layout-foreground = ${colors.my_foreground}
+
+layout-icon-default = 
+
