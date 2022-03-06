@@ -153,6 +153,9 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 
+# Define apps to specific workspaces
+assign [class="Slack"] $ws3
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -220,6 +223,8 @@ exec_always --no-startup-id ~/.config/compton/launch.sh
 exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
 exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/active false
 exec_always xautolock -time 15 -locker "~/.config/i3/lock.sh" -corners +00-
+exec "setxkbmap -layout us,il"
+exec "setxkbmap -option 'grp:win_space_toggle'"
 
 # Colors set from ~/.Xresources
 set_from_resource	$background	background
