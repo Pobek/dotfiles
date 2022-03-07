@@ -244,7 +244,7 @@ spacing = 2
 
 format-mounted =  <label-mounted>
 
-label-mounted = %mountpoint%: %free%%
+label-mounted = %mountpoint%: %free%
 
 [module/xkeyboard]
 type = internal/xkeyboard
