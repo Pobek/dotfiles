@@ -4,9 +4,9 @@ My dotfiles repository uses [dotbot](https://github.com/anishathalye/dotbot).
 
 ## Images
 
-![pic1](https://github.com/pobek/dotfiles/blob/master/pics/pic1.png?raw=true)
+![pic4](https://github.com/pobek/dotfiles/blob/master/pics/pic4.png?raw=true)
 
-![pic2](https://github.com/pobek/dotfiles/blob/master/pics/pic2.png?raw=true)
+![pic5](https://github.com/pobek/dotfiles/blob/master/pics/pic5.png?raw=true)
 
 ![pic3](https://github.com/pobek/dotfiles/blob/master/pics/pic3.png?raw=true)
 
