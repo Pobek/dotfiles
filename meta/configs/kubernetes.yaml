@@ -1,0 +1,10 @@
+- shell:
+    - command: [curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg]
+
+- link:
+    /etc/apt/sources.list.d/kubernets.list: kubernetes/kubernetes.list
+
+- shell:
+    - command: [apt-get update]
+    - command: [apt-get install -y apt-transport-https ca-certificates curl]
+    - command: [apt-get install -y kubectl]
