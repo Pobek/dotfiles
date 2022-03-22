@@ -1,0 +1,9 @@
+- create:
+    - /opt/awscli/
+
+- shell:
+    - command: [apt-get install -y curl]
+    - command: [curl -fsSLo /opt/awscli/awscliv2.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip]
+    - command: [unzip -o -q /opt/awscli/awscliv2.zip -d /opt/awscli/]
+    - command: [bash /opt/awscli/aws/install --update]
+    - command: [rm -f /opt/awscli/awscliv2.zip]
