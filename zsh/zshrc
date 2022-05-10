@@ -5,7 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export LC_COLLATE=C
 
-export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/springgg-app-cc659067785f.json"
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/application_default_credentials.json"
 export GOOGLE_REGION=$(gcloud config get-value compute/region)
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
