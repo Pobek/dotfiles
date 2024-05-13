@@ -22,6 +22,7 @@ Plug 'metakirby5/codi.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'preservim/nerdtree'
 "Plug 'davidhalter/jedi-vim'
+Plug 'https://github.com/hashivim/vim-terraform.git'
 
 call plug#end()
 
